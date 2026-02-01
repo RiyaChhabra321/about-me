@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.hero {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.hero img {
+  width: 140px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  margin-bottom: 16px;
+  border-bottom: 2px solid #2563eb;
+  display: inline-block;
+}
+
+.tags span {
+  background: #1e293b;
+  padding: 8px 12px;
+  border-radius: 12px;
+  margin: 6px;
+  display: inline-block;
+}
+
+.certs img {
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.connect a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 16px;
+  background: #2563eb;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+}
