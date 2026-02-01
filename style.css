@@ -83,6 +83,23 @@ h1 {
   margin-bottom: 8px;
 }
 
+.typing {
+  font-size: 18px;
+  color: #c7d2fe;
+}
+
+#typing-text {
+  border-right: 2px solid #38bdf8;
+  padding-right: 6px;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 h2 {
   margin-bottom: 20px;
   border-bottom: 2px solid #2563eb;
@@ -103,17 +120,9 @@ h2 {
   border-radius: 12px;
 }
 
-.contact a {
-  display: inline-block;
-  margin: 10px;
-  padding: 12px 18px;
-  background: linear-gradient(135deg, #2563eb, #3b82f6);
-  color: white;
-  border-radius: 12px;
-  text-decoration: none;
-  transition: 0.2s;
-}
-
-.contact a:hover {
-  transform: translateY(-2px);
-}
+/* Highlight effect */
+.highlight-text {
+  position: relative;
+  font-size: 42px;
+  font-weight: 800;
+  d
