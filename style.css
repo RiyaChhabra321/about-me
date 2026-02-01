@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
@@ -6,15 +10,66 @@ body {
   line-height: 1.6;
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #0f172a, #1e1b4b);
+  padding: 14px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  margin: 0;
+}
+
+.navbar a {
+  color: #c7d2fe;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+}
+
+.navbar a:hover {
+  color: white;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #38bdf8;
+  left: 0;
+  bottom: -6px;
+  transition: 0.3s;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
 section {
   max-width: 900px;
   margin: auto;
-  padding: 60px 20px;
+  padding: 120px 20px;
 }
 
 .hero {
   text-align: center;
-  padding-top: 80px;
+  padding-top: 140px;
 }
 
 .hero img {
@@ -25,34 +80,40 @@ section {
 
 h1 {
   font-size: 36px;
+  margin-bottom: 8px;
 }
 
 h2 {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   border-bottom: 2px solid #2563eb;
   display: inline-block;
 }
 
 .tags span {
   background: #1e293b;
-  padding: 8px 12px;
+  padding: 8px 14px;
   border-radius: 12px;
   margin: 6px;
   display: inline-block;
 }
 
 .certs img {
-  width: 200px;
+  width: 220px;
   margin: 10px;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
-.connect a {
+.contact a {
   display: inline-block;
   margin: 10px;
-  padding: 10px 16px;
-  background: #2563eb;
+  padding: 12px 18px;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
   color: white;
-  border-radius: 10px;
+  border-radius: 12px;
   text-decoration: none;
+  transition: 0.2s;
+}
+
+.contact a:hover {
+  transform: translateY(-2px);
 }
